@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B14" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Sunset Horizon Glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="65%" r="45%">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="1" />
+      <stop offset="35%" stop-color="#FB923C" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#F97316" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#070B14" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Star Glow -->
+    <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF" stop-opacity="1" />
+      <stop offset="40%" stop-color="#FED7AA" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FB923C" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Architectural B Gradient -->
+    <linearGradient id="archB" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Base -->
+  <rect width="100" height="100" rx="22" fill="url(#bgGrad)" />
+
+  <!-- Inner Horizon Glow within Portal -->
+  <circle cx="56" cy="52" r="26" fill="url(#sunGlow)" opacity="0.85" />
+
+  <!-- Guiding 4-Pointed Star -->
+  <g transform="translate(56, 36) scale(0.65)">
+    <path d="M0 -15 Q0 0 15 0 Q0 0 0 15 Q0 0 -15 0 Q0 0 0 -15 Z" fill="#FFE4D6" />
+    <circle cx="0" cy="0" r="3" fill="#FFF" />
+  </g>
+
+  <!-- Winding Path -->
+  <path d="M 46 75 C 52 70, 54 62, 57 58 C 59 55, 57 52, 56 50 L 59 50 C 60 53, 62 57, 56 63 C 52 68, 54 71, 56 75 Z" fill="#FED7AA" opacity="0.9" />
+
+  <!-- Architectural 'B' Portal Glyph -->
+  <!-- Left Column / Monolith Doorway -->
+  <polygon points="32,20 44,25 44,78 32,74" fill="url(#archB)" />
+  <polygon points="44,25 48,27 48,76 44,78" fill="#CBD5E1" opacity="0.75" />
+
+  <!-- Top Curve of B -->
+  <path d="M 44 25 C 68 25, 78 33, 68 47 C 62 50, 52 50, 48 50 L 48 45 C 52 45, 60 44, 63 39 C 66 33, 56 30, 44 30 Z" fill="url(#archB)" />
+
+  <!-- Bottom Curve of B -->
+  <path d="M 48 50 C 58 50, 78 52, 78 65 C 78 76, 62 76, 44 76 L 44 71 C 56 71, 71 71, 71 64 C 71 56, 56 55, 48 55 Z" fill="url(#archB)" />
+</svg>
